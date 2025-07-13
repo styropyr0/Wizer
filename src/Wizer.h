@@ -14,9 +14,7 @@
 #include <Arduino.h>
 #include <vector>
 #include <functional>
-
-#define WIZER_DEFAULT_HOST "google.com"
-#define MAX_HISTORY_ENTRIES 20
+#include "WizerConst.h"
 
 /**
  * @brief Struct to hold information about a scanned WiFi network.
@@ -228,7 +226,7 @@ private:
     std::vector<SignalSample> signalHistory;
     WiFiClient *client = nullptr;
 
-    static const int sampleSize = 10;
+    static const int sampleSize = WIZER_SAMPLE_SIZE;
 
     void calculateSignalScore();
     void pingTest();
