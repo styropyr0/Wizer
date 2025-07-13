@@ -52,7 +52,6 @@ void loop() {
 
 ## Method Reference (Detailed)
 
----
 ### `void begin(const char* host = WIZER_DEFAULT_HOST);`
 Initializes the Wizer engine.
 - **@param** `host` – The hostname used for ping diagnostics (default: `google.com`).
@@ -179,19 +178,15 @@ Converts a `ConnectionInfo` struct into a JSON string.
 - **@param** `info` – Connection struct.
 - **@return** JSON string with full connection detail.
 
----
 
 ## Event Hooks
 
----
 ### `std::function<void()> onDisconnect;`
 Called automatically when WiFi drops.
 
 ---
 ### `std::function<void()> onReconnect;`
 Called when WiFi reconnects after disconnect.
-
----
 
 ## License
 
