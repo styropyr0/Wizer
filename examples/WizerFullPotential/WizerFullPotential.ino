@@ -52,11 +52,13 @@ void setup()
   wizer.begin("google.com");
 
   // Setup event callbacks
-  wizer.onDisconnect = []() {
+  wizer.onDisconnect = []()
+  {
     Serial.println("[Wizer] Detected WiFi disconnection.");
   };
 
-  wizer.onReconnect = []() {
+  wizer.onReconnect = []()
+  {
     Serial.println("[Wizer] WiFi connection restored.");
   };
 }
@@ -132,7 +134,7 @@ void loop()
   // --- Speed Test ---
   Serial.println("\n[Bandwidth Tests]");
 
-  float down = wizer.testDownloadSpeed("http://speedtest.tele2.net/1MB.zip");
+  float down = wizer.testDownloadSpeed("http://speedtest.tele2.net/100KB.zip");
   Serial.print("Download Speed  : ");
   Serial.print(down);
   Serial.println(" KB/s");

@@ -19,14 +19,7 @@
 
 ## Installation
 
-1. Copy the `Wizer.h`, `Wizer.cpp`, and `WizerConst.h` files into your Arduino/PlatformIO project.
-2. Include Wizer in your sketch:
-
-```cpp
-#include "Wizer.h"
-```
-
-3. Ensure you have WiFi credentials set and connected before using Wizer methods.
+Install the library from Arduino IDE or clone this library and move it inside Arduino/libraries.
 
 ---
 

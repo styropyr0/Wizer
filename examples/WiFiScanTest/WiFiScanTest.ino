@@ -13,9 +13,8 @@
   License   : MIT (You may reuse, modify, and distribute freely)
 
   Description:
-    This sketch demonstrates the use of the Wizer library to 
-    analyze WiFi signal quality, diagnose HTTP connection health,
-    and test download/upload bandwidth on ESP-based boards.
+    This sketch demonstrates the use of the Wizer library to
+    analyze WiFi signal quality.
 
   NOTE:
     This library does NOT manage or initiate WiFi connections. 
